@@ -1,0 +1,58 @@
+[project]
+name = "SeaIceMassBudgetMIP"
+description = "Open-source Python tool to calculate sea ice mass budget analysis from sea-ice components of Earth System Models."
+requires-python = ">=3.12"
+keywords = ["sea-ice", "cmip", "modelling", "analysis", "tipmip", "optimesm"]
+dynamic = ["version"]
+authors = [{email = "oliver.tooth@noc.ac.uk"},{name = "Ollie Tooth"}]
+maintainers = [{name = "Ollie Tooth", email = "oliver.tooth@noc.ac.uk"}]
+classifiers = [
+  "Operating System :: OS Independent",
+  "Intended Audience :: Science/Research",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Topic :: Scientific/Engineering",
+]
+
+dependencies = [
+  "typer",
+  "pydantic",
+  "dask[complete]>=2024.10.0",
+  "netcdf4",
+  "numpy>=1.26.4",
+  "xarray[accel]>=2024.10.0",
+  ]
+
+[project.readme]
+file = "README.md"
+content-type = "text/markdown"
+
+[project.license]
+file = "LICENSE"
+content-type = "text/markdown"
+
+[project.urls]
+Repository = "https://github.com/oj-tooth/SeaIceMassBudgetMIP"
+
+[project.scripts]
+simba = "simba.cli:app"
+
+[build-system]
+build-backend = "setuptools.build_meta"
+requires = ["setuptools>=77.0.3", "setuptools-scm>=8"]
+
+[tool.setuptools.packages.find]
+include = ["simba*"]
+
+[tool.ruff]
+line-length = 88
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B"]
+ignore = ["E501"]
+
+[tool.ruff.format]
+quote-style = "double"
