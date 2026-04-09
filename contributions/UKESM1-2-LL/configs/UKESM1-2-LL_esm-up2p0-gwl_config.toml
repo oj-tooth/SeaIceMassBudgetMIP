@@ -73,5 +73,6 @@ data_dir = "/home/users/o_tooth/NOC/OptimESM/JASMIN/data/UKESM1-2-LL/esm-up2p0-g
 [outputs]
 # Define Sea Ice Mass Budget Analysis netCDF output file:
 output_dir = "/home/users/o_tooth/NOC/OptimESM/SeaIceMassBudgetMIP/contributions/UKESM1-2-LL/outputs/"
-output_name = "UKESM1-2-LL_SIMBA_esm-up2p0-gwl4p0_r1i1p1f1"
+output_name = "UKESM1-2-LL_SIMBA_NH_esm-up2p0-gwl4p0_r1i1p1f1"
+# output_name = "UKESM1-2-LL_SIMBA_SH_esm-up2p0-gwl4p0_r1i1p1f1"
 date_format = "M"
