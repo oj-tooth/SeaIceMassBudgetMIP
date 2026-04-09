@@ -4,15 +4,17 @@ cli.py
 Description: Main command line interface for Sea Ice Mass Budget Analysis package.
 
 Created By: Ollie Tooth (oliver.tooth@noc.ac.uk)
-Date Created: 24/03/2026
 """
 
 # -- Import dependencies -- #
-import typer
 import logging
-from .__init__ import __version__
-from typing_extensions import Annotated
+
+import typer
+from typing_extensions import Annotated, Optional
+
 from simba.pipeline import describe_simba_pipeline, run_simba_pipeline
+
+from .__init__ import __version__
 
 app = typer.Typer()
 logger = logging.getLogger(__name__)
@@ -62,37 +64,21 @@ def init_logging(
 
 
 # -- Create Typer App -- #
-@app.command()
-def describe(
-    config: Annotated[str, typer.Argument(help="Path to SIMBA config .toml file")],
-    log: Annotated[
-        str,
-        typer.Option(help="Path to write SIMBA log file", rich_help_panel="Options")
-    ] = "simba.log",
-) -> None:
-    """
-    Describe SIMBA pipeline defined by configuration (.toml) file.
-    """
-    # -- Initialise Logging -- #
-    init_logging(log_filepath=log)
-    create_header()
-
-    # -- Describe SIMBA Workflow -- #
-    args = {
-        "config_file": config,
-        "log_filepath": log,
-    }
-    describe_simba_pipeline(args=args)
-    logging.info("✔ SIMBA Completed ✔")
-
+@app.callback()
+def main():
+    pass
 
 @app.command()
 def run(
     config: Annotated[str, typer.Argument(help="Path to SIMBA config .toml file")],
     log: Annotated[
-        str,
+        Optional[str],
         typer.Option(help="Path to write SIMBA log file", rich_help_panel="Options")
     ] = "simba.log",
+    dry_run: Annotated[
+        Optional[bool],
+        typer.Option(help="Describe SIMBA pipeline without running", rich_help_panel="Options")
+    ] = False,
 ) -> None:
     """
     Run SIMBA using configuration (.toml) file in current process.
@@ -105,10 +91,14 @@ def run(
     args = {
         "config_file": config,
         "log_filepath": log,
+        "dry_run": dry_run,
     }
-    run_simba_pipeline(args=args)
-    logging.info("✔ SIMBA Completed ✔")
+    if dry_run:
+        describe_simba_pipeline(args=args)
+    else:
+        run_simba_pipeline(args=args)
 
+    logging.info("✔ SIMBA Completed ✔")
 
 if __name__ == "__main__":
     app()
