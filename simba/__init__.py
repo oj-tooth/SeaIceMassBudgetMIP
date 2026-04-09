@@ -9,13 +9,17 @@ __credits__ = "National Oceanography Centre (NOC), Southampton, UK"
 
 from importlib.metadata import version as _version
 
-from simba import cli
+from simba import (
+    cli,
+    pipeline,
+    utils,
+)
 
 try:
     __version__ = _version("simba")
 except Exception:
     # Local copy or not installed with setuptools.
     # Disable minimum version checks on downstream libraries.
-    __version__ = "9999.0.0"
+    __version__ = "0.1.0"
 
-__all__ = ("cli",)
+__all__ = ("cli", "pipeline", "utils")
