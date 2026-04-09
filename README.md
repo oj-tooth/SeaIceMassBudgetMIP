@@ -1,4 +1,4 @@
-# Sea Ice Mass Budget Model Intercomparison Project
+# Sea Ice Mass Budget Analysis: Model Intercomparison Project
 
 ## **About**
 
@@ -16,36 +16,36 @@ Here, we seek to quantify the relative contributions to the total sea-ice mass b
 
 We invite contributions from centers producing TIPMIP-ESM simulations.
 
-We have provided a open-source Python tool to perform the Sea Ice Mass Budget Ananlysis (**SIMBA**) from CMORISED monthly-mean sea ice outputs.
+We have provided a open-source Python tool to perform the Sea Ice Mass Budget Analysis (**SIMBA**) from monthly-mean sea ice outputs.
 
 ### **Installation**
 
-Users are recommended to install the latest version of this repository using Git:
-```{bash}
-git clone git@github.com:oj-tooth/sea_ice_mass_budget_MIP.git
+Users are recommended to download the latest version of this repository using Git:
+
+```bash
+git clone https://github.com/oj-tooth/SeaIceMassBudgetMIP.git
 ```
 
 Then, install the dependencies in a new conda virtual environment and install **SIMBA** in editable mode:
-```{bash}
+
+```bash
 # Navigate to cloned GitHub repo:
-cd simba_mip
+cd SeaIceMassBudgetMIP
 
-# Create conda virtual environment:
-conda env create -f simba_environment.yml
+# Activate new Python virtual environment using conda:
+conda activate env_simba
 
-# Activate new virtual environment:
-conda activate env_nemo_cookbook
-
-# Install SIMBA as a Python package:
+# Install SIMBA CLI as a Python package:
 pip install -e .
 ```
 
 Alternatively, install the dependencies in a new Python virtual environment and install **SIMBA** in editable mode:
-```{bash}
-# Navigate to cloned GitHub repo:
-cd simba_mip
 
-# Create new virtual environment:
+```bash
+# Navigate to cloned GitHub repo:
+cd SeaIceMassBudgetMIP
+
+# Create new virtual environment using venv:
 python -m venv /path/to/new/env_simba
 
 # Activate new virtual environment:
@@ -54,6 +54,53 @@ source activate env_simba/bin/activate
 # Install SIMBA as a Python package:
 pip install -e .
 ```
+
+### **Configuring SIMBA**
+
+To perform a Sea Ice Mass Balance Analysis on the outputs of a given model simulation, we must first create a configuration `.toml` file as follows:
+
+1. Create a new directory for your contribution in the `contributions/` directory...
+```bash
+# Move to contributions directory:
+cd contributions/
+
+# Make a new directory for your Earth-System-Model (ESM):
+mkdir myESM
+```
+
+2. Copy the template configuration `.toml` file to your ESM directory...
+```bash
+cp template_config.toml myESM/myESM_config.toml
+```
+
+3. Modify the configuration `.toml` file:
+
+    * Use the `[inputs]` tables to define the variable names and filepaths to the sea ice mass balance components output by your ESM.
+    * Use the `[outputs]` table to specify the directory, filename and date format of the netCDF file output containing time-series of the total sea ice mass and the total sea ice mass changes due to each term in the mass budget.
+
+### **Running SIMBA**
+
+Once you have finished updating your configuration `.toml` file, use the following steps to perform a Sea Ice Mass Balance Analysis pipeline:
+
+1. Activate the Python virtual environment where you installed the **SIMBA** Command-Line Interface using `pip`...
+
+```bash
+# Using conda:
+conda activate env_simba
+
+# Using venv:
+source activate env_simba/bin/activate
+```
+
+2. Use the **SIMBA** command-line interface (CLI) to run a Sea Ice Mass Balance Analysis in the current process using your configuration `.toml` file...
+
+```bash
+simba run /path/to/config.toml --log /path/to/simba.log
+```
+
+where the `--log` argument is used to specify the path to write the `.log` file describing each of the steps of the **SIMBA** pipeline.
+
+**Note:** we can also perform a dry-run, meaning that we do not execute the **SIMBA** pipeline and instead receive a summary of each of the steps that will be undertaken. This is particularly useful for debugging.
 
 ## **Contact**
 
