@@ -1,65 +1,76 @@
 """
 utils.py
 
-Description: Utility functions for NEMO Pipeline package.
+Description: Utility functions for SIMBA package.
 
 Created By: Ollie Tooth (oliver.tooth@noc.ac.uk)
-Date Created: 24/03/2026
 """
 
 # -- Import dependencies -- #
-import cftime
 import tomllib
-import numpy as np
-import xarray as xr
 from pathlib import Path
 from typing import Literal
+
+import cftime
+import numpy as np
+import xarray as xr
 from pydantic import BaseModel, Field
 
 
 # Define Pydantic sub-models for each section of config .toml file:
+class InputVariable(BaseModel):
+    """
+    SIMBA Input Variable Configuration Model.
+    """
+    # Define variable name & filepath for each SIMBA input variable:
+    name : str
+    filepath : str
+
+
 class InputConfig(BaseModel):
     """
-    SIMBA Input configuration model.
+    SIMBA Input Configuration Model.
     """
-    # Define regional mask filepath:
-    mask_path : dict[str, str] = Field(default_factory=dict)
+    # Define dimensions of all SIMBA input variables:
+    dimensions : dict[str, str] = Field(default_factory=dict)
 
-    # Define SIMBA grid-cell area filepath:
-    areacello_path : dict[str, str] = Field(default_factory=dict)
+    # Define data directory for SIMBA input files:
+    data_dir : str | None = None
 
-    # Define SIMBA sea ice mass budget term filepaths:
-    sidmassth_path : dict[str, str] = Field(default_factory=dict)
-    sidmassdyn_path : dict[str, str] = Field(default_factory=dict)
-    sidmassgrowthwat_path : dict[str, str] = Field(default_factory=dict)
-    sidmassgrowthbot_path : dict[str, str] = Field(default_factory=dict)
-    sidmasssi_path : dict[str, str] = Field(default_factory=dict)
-    sidmassevapsubl_path : dict[str, str] = Field(default_factory=dict)
-    sidmassmelttop_path : dict[str, str] = Field(default_factory=dict)
-    sidmassmeltbot_path : dict[str, str] = Field(default_factory=dict)
-    sidmasslat_path : dict[str, str] = Field(default_factory=dict)
+    # Define sub-models for all SIMBA input variables:
+    mask: InputVariable
+    areacello: InputVariable
+    simass: InputVariable
+    sidmassth: InputVariable
+    sidmassdyn: InputVariable
+    sidmassgrowthwat: InputVariable
+    sidmassgrowthbot: InputVariable
+    sidmasssi: InputVariable
+    sidmassevapsubl: InputVariable
+    sidmassmelttop: InputVariable
+    sidmassmeltbot: InputVariable
+    sidmasslat: InputVariable
 
 
 class OutputConfig(BaseModel):
     """
-    SIMBA output configuration model.
+    SIMBA Output Configuration Model.
     """
     # Define SIMBA output file:
     output_dir : str
     output_name : str
-    chunks : dict[str, int] = Field(default_factory=dict)
     date_format : Literal["Y", "M", "D"]
 
 
 class AppConfig(BaseModel):
     """
-    SIMBA CLI configuration model.
+    SIMBA CLI Configuration Model.
     """
     inputs: InputConfig
     outputs: OutputConfig
 
 
-def load_config(args: dict) -> AppConfig:
+def load_config(args: dict) -> dict:
     """
     Load SIMBA configuration .toml file.
 
@@ -96,7 +107,7 @@ def get_output_filename(
     date_format: str
     ) -> str:
     """
-    Define NEMO Pipeline output filename.
+    Define SIMBA output filename.
 
     Parameters:
     -----------
@@ -119,7 +130,7 @@ def get_output_filename(
         raise TypeError("output_name must be a string.")
 
     # Define time-limits of output dataset:
-    time_limits = ds_out['time_counter'].values[[0, -1]]
+    time_limits = ds_out['time'].values[[0, -1]]
 
     # Create date string from CFTime datetime objects:
     if isinstance(time_limits[0], cftime.datetime):
