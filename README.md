@@ -10,7 +10,9 @@ The aim of this project is to use TIPMIP-ESM Tier-1 experiments to disentangle:
 * equilibrium adjustment at constant global warming levels.
 * inter-model structural uncertainty.
 
-Here, we seek to quantify the relative contributions to the total sea-ice mass budget following Keen et al (2021) to better understand the processes leading to ice loss and growth. 
+Here, we seek to quantify the relative contributions to the total sea-ice mass budget following **Keen et al (2021)** to better understand the processes leading to ice loss and growth. 
+
+> Keen, A., Blockley, E., Bailey, D., Debernard, J.B., Bushuk, M., et al. An inter-comparison of the mass budget of the Arctic sea ice in CMIP6 models. The Cryosphere, 2021, 15(2), pp.951-982. [https://doi.org/10.5194/tc-15-951-2021](https://doi.org/10.5194/tc-15-951-2021)
 
 ## **Contributing**
 
