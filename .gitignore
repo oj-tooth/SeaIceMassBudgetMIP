@@ -6,6 +6,9 @@ __pycache__/
 # Development notebooks
 dev/
 
+# netCDF files
+*.nc
+
 # Distribution / packaging
 .Python
 build/
