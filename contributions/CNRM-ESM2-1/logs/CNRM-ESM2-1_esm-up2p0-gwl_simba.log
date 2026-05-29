@@ -1,0 +1,207 @@
+⦿──⦿  SIMBA  ⦿──⦿  |       INFO | 2026-05-25 11:42:18 | 
+   ⦿──⦿──⦿──⦿──⦿──⦿──⦿──⦿──⦿──⦿──⦿──⦿
+       Sea Ice Mass Budget Analysis      
+   ⦿──⦿──⦿──⦿──⦿──⦿──⦿──⦿──⦿──⦿──⦿──⦿
+
+        version: 0.1.0
+
+
+⦿──⦿  SIMBA  ⦿──⦿  |       INFO | 2026-05-25 11:42:18 | ==== Inputs ====
+⦿──⦿  SIMBA  ⦿──⦿  |       INFO | 2026-05-25 11:42:18 | Completed: Read & validated config file -> ./configs/CNRM-ESM2-1_esm-up2p0-gwl_config.toml
+⦿──⦿  SIMBA  ⦿──⦿  |       INFO | 2026-05-25 11:42:18 | In Progress: Reading sea ice mass budget variables...
+⦿──⦿  SIMBA  ⦿──⦿  |       INFO | 2026-05-25 11:42:19 | --> Completed: Opened 'mask' variable.
+⦿──⦿  SIMBA  ⦿──⦿  |       INFO | 2026-05-25 11:42:19 | In Progress: Creating sea ice mass budget dataset from variables.
+⦿──⦿  SIMBA  ⦿──⦿  |       INFO | 2026-05-25 11:42:19 | --> Completed: Opened 'areacello' variable.
+⦿──⦿  SIMBA  ⦿──⦿  |       INFO | 2026-05-25 11:42:19 | --> Completed: Opened 'siconc' variable.
+⦿──⦿  SIMBA  ⦿──⦿  |       INFO | 2026-05-25 11:42:19 | --> Completed: Opened 'sivol' variable.
+⦿──⦿  SIMBA  ⦿──⦿  |       INFO | 2026-05-25 11:42:20 | --> Completed: Opened 'simass' variable.
+⦿──⦿  SIMBA  ⦿──⦿  |       INFO | 2026-05-25 11:42:20 | --> Completed: Opened 'sidmassth' variable.
+⦿──⦿  SIMBA  ⦿──⦿  |       INFO | 2026-05-25 11:42:20 | --> Completed: Opened 'sidmassdyn' variable.
+⦿──⦿  SIMBA  ⦿──⦿  |       INFO | 2026-05-25 11:42:26 | --> Completed: Opened 'sidmassevapsubl' variable.
+⦿──⦿  SIMBA  ⦿──⦿  |       INFO | 2026-05-25 11:42:32 | --> Completed: Opened 'sidmassmelttop' variable.
+⦿──⦿  SIMBA  ⦿──⦿  |       INFO | 2026-05-25 11:42:37 | --> Completed: Opened 'sidmassmeltbot' variable.
+⦿──⦿  SIMBA  ⦿──⦿  |       INFO | 2026-05-25 11:42:37 | --> Completed: Created sea ice mass budget dataset from variables.
+⦿──⦿  SIMBA  ⦿──⦿  |       INFO | 2026-05-25 11:42:37 | ==== Sea Ice Mass Budget Calculation ====
+⦿──⦿  SIMBA  ⦿──⦿  |       INFO | 2026-05-25 11:42:37 | In Progress: Calculating Regional Sea Ice Mass Budget...
+⦿──⦿  SIMBA  ⦿──⦿  |       INFO | 2026-05-25 11:43:28 | Completed: Calculated Regional Sea Ice Mass Budget.
+⦿──⦿  SIMBA  ⦿──⦿  |       INFO | 2026-05-25 11:43:28 | ==== Outputs ====
+⦿──⦿  SIMBA  ⦿──⦿  |       INFO | 2026-05-25 11:43:28 | In Progress: Saving Sea Ice Mass Budget Analysis outputs to netCDF file...
+⦿──⦿  SIMBA  ⦿──⦿  |       INFO | 2026-05-25 11:43:29 | Completed: Saved Sea Ice Mass Budget Analysis outputs to file -> /g100_work/optim_IAC/research/noc/otooth/OptimESM/WP5/SeaIceMassBudgetMIP/contributions/CNRM-ESM2-1/outputs//CNRM-ESM2-1_SIMBA_NH_esm-up2p0-gwl2p0_r1i1p2f2_1949-01-2248-12.nc
+⦿──⦿  SIMBA  ⦿──⦿  |       INFO | 2026-05-25 11:43:29 | Completed: Succesfully closed all netcdf files.
+⦿──⦿  SIMBA  ⦿──⦿  |       INFO | 2026-05-25 11:43:29 | ✔ SIMBA Completed ✔
+⦿──⦿  SIMBA  ⦿──⦿  |       INFO | 2026-05-25 11:43:47 | 
+   ⦿──⦿──⦿──⦿──⦿──⦿──⦿──⦿──⦿──⦿──⦿──⦿
+       Sea Ice Mass Budget Analysis      
+   ⦿──⦿──⦿──⦿──⦿──⦿──⦿──⦿──⦿──⦿──⦿──⦿
+
+        version: 0.1.0
+
+
+⦿──⦿  SIMBA  ⦿──⦿  |       INFO | 2026-05-25 11:43:47 | ==== Inputs ====
+⦿──⦿  SIMBA  ⦿──⦿  |       INFO | 2026-05-25 11:43:47 | Completed: Read & validated config file -> ./configs/CNRM-ESM2-1_esm-up2p0-gwl_config.toml
+⦿──⦿  SIMBA  ⦿──⦿  |       INFO | 2026-05-25 11:43:47 | In Progress: Reading sea ice mass budget variables...
+⦿──⦿  SIMBA  ⦿──⦿  |       INFO | 2026-05-25 11:43:47 | --> Completed: Opened 'mask' variable.
+⦿──⦿  SIMBA  ⦿──⦿  |       INFO | 2026-05-25 11:43:47 | In Progress: Creating sea ice mass budget dataset from variables.
+⦿──⦿  SIMBA  ⦿──⦿  |       INFO | 2026-05-25 11:43:47 | --> Completed: Opened 'areacello' variable.
+⦿──⦿  SIMBA  ⦿──⦿  |       INFO | 2026-05-25 11:43:47 | --> Completed: Opened 'siconc' variable.
+⦿──⦿  SIMBA  ⦿──⦿  |       INFO | 2026-05-25 11:43:47 | --> Completed: Opened 'sivol' variable.
+⦿──⦿  SIMBA  ⦿──⦿  |       INFO | 2026-05-25 11:43:47 | --> Completed: Opened 'simass' variable.
+⦿──⦿  SIMBA  ⦿──⦿  |       INFO | 2026-05-25 11:43:47 | --> Completed: Opened 'sidmassth' variable.
+⦿──⦿  SIMBA  ⦿──⦿  |       INFO | 2026-05-25 11:43:47 | --> Completed: Opened 'sidmassdyn' variable.
+⦿──⦿  SIMBA  ⦿──⦿  |       INFO | 2026-05-25 11:43:52 | --> Completed: Opened 'sidmassevapsubl' variable.
+⦿──⦿  SIMBA  ⦿──⦿  |       INFO | 2026-05-25 11:43:58 | --> Completed: Opened 'sidmassmelttop' variable.
+⦿──⦿  SIMBA  ⦿──⦿  |       INFO | 2026-05-25 11:44:03 | --> Completed: Opened 'sidmassmeltbot' variable.
+⦿──⦿  SIMBA  ⦿──⦿  |       INFO | 2026-05-25 11:44:03 | --> Completed: Created sea ice mass budget dataset from variables.
+⦿──⦿  SIMBA  ⦿──⦿  |       INFO | 2026-05-25 11:44:03 | ==== Sea Ice Mass Budget Calculation ====
+⦿──⦿  SIMBA  ⦿──⦿  |       INFO | 2026-05-25 11:44:03 | In Progress: Calculating Regional Sea Ice Mass Budget...
+⦿──⦿  SIMBA  ⦿──⦿  |       INFO | 2026-05-25 11:44:51 | Completed: Calculated Regional Sea Ice Mass Budget.
+⦿──⦿  SIMBA  ⦿──⦿  |       INFO | 2026-05-25 11:44:51 | ==== Outputs ====
+⦿──⦿  SIMBA  ⦿──⦿  |       INFO | 2026-05-25 11:44:51 | In Progress: Saving Sea Ice Mass Budget Analysis outputs to netCDF file...
+⦿──⦿  SIMBA  ⦿──⦿  |       INFO | 2026-05-25 11:44:52 | Completed: Saved Sea Ice Mass Budget Analysis outputs to file -> /g100_work/optim_IAC/research/noc/otooth/OptimESM/WP5/SeaIceMassBudgetMIP/contributions/CNRM-ESM2-1/outputs//CNRM-ESM2-1_SIMBA_SH_esm-up2p0-gwl2p0_r1i1p2f2_1949-01-2248-12.nc
+⦿──⦿  SIMBA  ⦿──⦿  |       INFO | 2026-05-25 11:44:52 | Completed: Succesfully closed all netcdf files.
+⦿──⦿  SIMBA  ⦿──⦿  |       INFO | 2026-05-25 11:44:52 | ✔ SIMBA Completed ✔
+⦿──⦿  SIMBA  ⦿──⦿  |       INFO | 2026-05-25 11:45:57 | 
+   ⦿──⦿──⦿──⦿──⦿──⦿──⦿──⦿──⦿──⦿──⦿──⦿
+       Sea Ice Mass Budget Analysis      
+   ⦿──⦿──⦿──⦿──⦿──⦿──⦿──⦿──⦿──⦿──⦿──⦿
+
+        version: 0.1.0
+
+
+⦿──⦿  SIMBA  ⦿──⦿  |       INFO | 2026-05-25 11:45:57 | ==== Inputs ====
+⦿──⦿  SIMBA  ⦿──⦿  |       INFO | 2026-05-25 11:45:57 | Completed: Read & validated config file -> ./configs/CNRM-ESM2-1_esm-up2p0-gwl_config.toml
+⦿──⦿  SIMBA  ⦿──⦿  |       INFO | 2026-05-25 11:45:57 | In Progress: Reading sea ice mass budget variables...
+⦿──⦿  SIMBA  ⦿──⦿  |       INFO | 2026-05-25 11:45:57 | --> Completed: Opened 'mask' variable.
+⦿──⦿  SIMBA  ⦿──⦿  |       INFO | 2026-05-25 11:45:57 | In Progress: Creating sea ice mass budget dataset from variables.
+⦿──⦿  SIMBA  ⦿──⦿  |       INFO | 2026-05-25 11:45:57 | --> Completed: Opened 'areacello' variable.
+⦿──⦿  SIMBA  ⦿──⦿  |       INFO | 2026-05-25 11:45:58 | --> Completed: Opened 'siconc' variable.
+⦿──⦿  SIMBA  ⦿──⦿  |       INFO | 2026-05-25 11:45:58 | --> Completed: Opened 'sivol' variable.
+⦿──⦿  SIMBA  ⦿──⦿  |       INFO | 2026-05-25 11:45:58 | --> Completed: Opened 'simass' variable.
+⦿──⦿  SIMBA  ⦿──⦿  |       INFO | 2026-05-25 11:45:59 | --> Completed: Opened 'sidmassth' variable.
+⦿──⦿  SIMBA  ⦿──⦿  |       INFO | 2026-05-25 11:45:59 | --> Completed: Opened 'sidmassdyn' variable.
+⦿──⦿  SIMBA  ⦿──⦿  |       INFO | 2026-05-25 11:46:04 | --> Completed: Opened 'sidmassevapsubl' variable.
+⦿──⦿  SIMBA  ⦿──⦿  |       INFO | 2026-05-25 11:46:09 | --> Completed: Opened 'sidmassmelttop' variable.
+⦿──⦿  SIMBA  ⦿──⦿  |       INFO | 2026-05-25 11:46:26 | 
+   ⦿──⦿──⦿──⦿──⦿──⦿──⦿──⦿──⦿──⦿──⦿──⦿
+       Sea Ice Mass Budget Analysis      
+   ⦿──⦿──⦿──⦿──⦿──⦿──⦿──⦿──⦿──⦿──⦿──⦿
+
+        version: 0.1.0
+
+
+⦿──⦿  SIMBA  ⦿──⦿  |       INFO | 2026-05-25 11:46:26 | ==== Inputs ====
+⦿──⦿  SIMBA  ⦿──⦿  |       INFO | 2026-05-25 11:46:26 | Completed: Read & validated config file -> ./configs/CNRM-ESM2-1_esm-up2p0-gwl_config.toml
+⦿──⦿  SIMBA  ⦿──⦿  |       INFO | 2026-05-25 11:46:26 | In Progress: Reading sea ice mass budget variables...
+⦿──⦿  SIMBA  ⦿──⦿  |       INFO | 2026-05-25 11:46:26 | --> Completed: Opened 'mask' variable.
+⦿──⦿  SIMBA  ⦿──⦿  |       INFO | 2026-05-25 11:46:26 | In Progress: Creating sea ice mass budget dataset from variables.
+⦿──⦿  SIMBA  ⦿──⦿  |       INFO | 2026-05-25 11:46:26 | --> Completed: Opened 'areacello' variable.
+⦿──⦿  SIMBA  ⦿──⦿  |       INFO | 2026-05-25 11:46:26 | --> Completed: Opened 'siconc' variable.
+⦿──⦿  SIMBA  ⦿──⦿  |       INFO | 2026-05-25 11:46:26 | --> Completed: Opened 'sivol' variable.
+⦿──⦿  SIMBA  ⦿──⦿  |       INFO | 2026-05-25 11:46:26 | --> Completed: Opened 'simass' variable.
+⦿──⦿  SIMBA  ⦿──⦿  |       INFO | 2026-05-25 11:46:26 | --> Completed: Opened 'sidmassth' variable.
+⦿──⦿  SIMBA  ⦿──⦿  |       INFO | 2026-05-25 11:46:26 | --> Completed: Opened 'sidmassdyn' variable.
+⦿──⦿  SIMBA  ⦿──⦿  |       INFO | 2026-05-25 11:46:30 | --> Completed: Opened 'sidmassevapsubl' variable.
+⦿──⦿  SIMBA  ⦿──⦿  |       INFO | 2026-05-25 11:46:34 | --> Completed: Opened 'sidmassmelttop' variable.
+⦿──⦿  SIMBA  ⦿──⦿  |       INFO | 2026-05-25 11:46:39 | --> Completed: Opened 'sidmassmeltbot' variable.
+⦿──⦿  SIMBA  ⦿──⦿  |       INFO | 2026-05-25 11:46:39 | --> Completed: Created sea ice mass budget dataset from variables.
+⦿──⦿  SIMBA  ⦿──⦿  |       INFO | 2026-05-25 11:46:39 | ==== Sea Ice Mass Budget Calculation ====
+⦿──⦿  SIMBA  ⦿──⦿  |       INFO | 2026-05-25 11:46:39 | In Progress: Calculating Regional Sea Ice Mass Budget...
+⦿──⦿  SIMBA  ⦿──⦿  |       INFO | 2026-05-25 11:47:28 | Completed: Calculated Regional Sea Ice Mass Budget.
+⦿──⦿  SIMBA  ⦿──⦿  |       INFO | 2026-05-25 11:47:28 | ==== Outputs ====
+⦿──⦿  SIMBA  ⦿──⦿  |       INFO | 2026-05-25 11:47:28 | In Progress: Saving Sea Ice Mass Budget Analysis outputs to netCDF file...
+⦿──⦿  SIMBA  ⦿──⦿  |       INFO | 2026-05-25 11:47:28 | Completed: Saved Sea Ice Mass Budget Analysis outputs to file -> /g100_work/optim_IAC/research/noc/otooth/OptimESM/WP5/SeaIceMassBudgetMIP/contributions/CNRM-ESM2-1/outputs//CNRM-ESM2-1_SIMBA_NH_esm-up2p0-gwl4p0_r1i1p2f2_2044-01-2343-12.nc
+⦿──⦿  SIMBA  ⦿──⦿  |       INFO | 2026-05-25 11:47:28 | Completed: Succesfully closed all netcdf files.
+⦿──⦿  SIMBA  ⦿──⦿  |       INFO | 2026-05-25 11:47:28 | ✔ SIMBA Completed ✔
+⦿──⦿  SIMBA  ⦿──⦿  |       INFO | 2026-05-25 11:47:47 | 
+   ⦿──⦿──⦿──⦿──⦿──⦿──⦿──⦿──⦿──⦿──⦿──⦿
+       Sea Ice Mass Budget Analysis      
+   ⦿──⦿──⦿──⦿──⦿──⦿──⦿──⦿──⦿──⦿──⦿──⦿
+
+        version: 0.1.0
+
+
+⦿──⦿  SIMBA  ⦿──⦿  |       INFO | 2026-05-25 11:47:47 | ==== Inputs ====
+⦿──⦿  SIMBA  ⦿──⦿  |       INFO | 2026-05-25 11:47:47 | Completed: Read & validated config file -> ./configs/CNRM-ESM2-1_esm-up2p0-gwl_config.toml
+⦿──⦿  SIMBA  ⦿──⦿  |       INFO | 2026-05-25 11:47:47 | In Progress: Reading sea ice mass budget variables...
+⦿──⦿  SIMBA  ⦿──⦿  |       INFO | 2026-05-25 11:47:47 | --> Completed: Opened 'mask' variable.
+⦿──⦿  SIMBA  ⦿──⦿  |       INFO | 2026-05-25 11:47:47 | In Progress: Creating sea ice mass budget dataset from variables.
+⦿──⦿  SIMBA  ⦿──⦿  |       INFO | 2026-05-25 11:47:47 | --> Completed: Opened 'areacello' variable.
+⦿──⦿  SIMBA  ⦿──⦿  |       INFO | 2026-05-25 11:47:47 | --> Completed: Opened 'siconc' variable.
+⦿──⦿  SIMBA  ⦿──⦿  |       INFO | 2026-05-25 11:47:47 | --> Completed: Opened 'sivol' variable.
+⦿──⦿  SIMBA  ⦿──⦿  |       INFO | 2026-05-25 11:47:47 | --> Completed: Opened 'simass' variable.
+⦿──⦿  SIMBA  ⦿──⦿  |       INFO | 2026-05-25 11:47:47 | --> Completed: Opened 'sidmassth' variable.
+⦿──⦿  SIMBA  ⦿──⦿  |       INFO | 2026-05-25 11:47:47 | --> Completed: Opened 'sidmassdyn' variable.
+⦿──⦿  SIMBA  ⦿──⦿  |       INFO | 2026-05-25 11:47:51 | --> Completed: Opened 'sidmassevapsubl' variable.
+⦿──⦿  SIMBA  ⦿──⦿  |       INFO | 2026-05-25 11:47:56 | --> Completed: Opened 'sidmassmelttop' variable.
+⦿──⦿  SIMBA  ⦿──⦿  |       INFO | 2026-05-25 11:48:00 | --> Completed: Opened 'sidmassmeltbot' variable.
+⦿──⦿  SIMBA  ⦿──⦿  |       INFO | 2026-05-25 11:48:00 | --> Completed: Created sea ice mass budget dataset from variables.
+⦿──⦿  SIMBA  ⦿──⦿  |       INFO | 2026-05-25 11:48:00 | ==== Sea Ice Mass Budget Calculation ====
+⦿──⦿  SIMBA  ⦿──⦿  |       INFO | 2026-05-25 11:48:00 | In Progress: Calculating Regional Sea Ice Mass Budget...
+⦿──⦿  SIMBA  ⦿──⦿  |       INFO | 2026-05-25 11:48:47 | Completed: Calculated Regional Sea Ice Mass Budget.
+⦿──⦿  SIMBA  ⦿──⦿  |       INFO | 2026-05-25 11:48:47 | ==== Outputs ====
+⦿──⦿  SIMBA  ⦿──⦿  |       INFO | 2026-05-25 11:48:47 | In Progress: Saving Sea Ice Mass Budget Analysis outputs to netCDF file...
+⦿──⦿  SIMBA  ⦿──⦿  |       INFO | 2026-05-25 11:48:48 | Completed: Saved Sea Ice Mass Budget Analysis outputs to file -> /g100_work/optim_IAC/research/noc/otooth/OptimESM/WP5/SeaIceMassBudgetMIP/contributions/CNRM-ESM2-1/outputs//CNRM-ESM2-1_SIMBA_SH_esm-up2p0-gwl4p0_r1i1p2f2_2044-01-2343-12.nc
+⦿──⦿  SIMBA  ⦿──⦿  |       INFO | 2026-05-25 11:48:48 | Completed: Succesfully closed all netcdf files.
+⦿──⦿  SIMBA  ⦿──⦿  |       INFO | 2026-05-25 11:48:48 | ✔ SIMBA Completed ✔
+⦿──⦿  SIMBA  ⦿──⦿  |       INFO | 2026-05-25 11:49:56 | 
+   ⦿──⦿──⦿──⦿──⦿──⦿──⦿──⦿──⦿──⦿──⦿──⦿
+       Sea Ice Mass Budget Analysis      
+   ⦿──⦿──⦿──⦿──⦿──⦿──⦿──⦿──⦿──⦿──⦿──⦿
+
+        version: 0.1.0
+
+
+⦿──⦿  SIMBA  ⦿──⦿  |       INFO | 2026-05-25 11:49:56 | ==== Inputs ====
+⦿──⦿  SIMBA  ⦿──⦿  |       INFO | 2026-05-25 11:49:56 | Completed: Read & validated config file -> ./configs/CNRM-ESM2-1_esm-up2p0-gwl_config.toml
+⦿──⦿  SIMBA  ⦿──⦿  |       INFO | 2026-05-25 11:49:56 | In Progress: Reading sea ice mass budget variables...
+⦿──⦿  SIMBA  ⦿──⦿  |       INFO | 2026-05-25 11:49:56 | --> Completed: Opened 'mask' variable.
+⦿──⦿  SIMBA  ⦿──⦿  |       INFO | 2026-05-25 11:49:56 | In Progress: Creating sea ice mass budget dataset from variables.
+⦿──⦿  SIMBA  ⦿──⦿  |       INFO | 2026-05-25 11:49:56 | --> Completed: Opened 'areacello' variable.
+⦿──⦿  SIMBA  ⦿──⦿  |       INFO | 2026-05-25 11:49:57 | --> Completed: Opened 'siconc' variable.
+⦿──⦿  SIMBA  ⦿──⦿  |       INFO | 2026-05-25 11:49:57 | --> Completed: Opened 'sivol' variable.
+⦿──⦿  SIMBA  ⦿──⦿  |       INFO | 2026-05-25 11:49:57 | --> Completed: Opened 'simass' variable.
+⦿──⦿  SIMBA  ⦿──⦿  |       INFO | 2026-05-25 11:49:58 | --> Completed: Opened 'sidmassth' variable.
+⦿──⦿  SIMBA  ⦿──⦿  |       INFO | 2026-05-25 11:49:58 | --> Completed: Opened 'sidmassdyn' variable.
+⦿──⦿  SIMBA  ⦿──⦿  |       INFO | 2026-05-25 11:50:02 | --> Completed: Opened 'sidmassevapsubl' variable.
+⦿──⦿  SIMBA  ⦿──⦿  |       INFO | 2026-05-25 11:50:06 | --> Completed: Opened 'sidmassmelttop' variable.
+⦿──⦿  SIMBA  ⦿──⦿  |       INFO | 2026-05-25 11:50:10 | --> Completed: Opened 'sidmassmeltbot' variable.
+⦿──⦿  SIMBA  ⦿──⦿  |       INFO | 2026-05-25 11:50:10 | --> Completed: Created sea ice mass budget dataset from variables.
+⦿──⦿  SIMBA  ⦿──⦿  |       INFO | 2026-05-25 11:50:10 | ==== Sea Ice Mass Budget Calculation ====
+⦿──⦿  SIMBA  ⦿──⦿  |       INFO | 2026-05-25 11:50:10 | In Progress: Calculating Regional Sea Ice Mass Budget...
+⦿──⦿  SIMBA  ⦿──⦿  |       INFO | 2026-05-25 11:50:59 | Completed: Calculated Regional Sea Ice Mass Budget.
+⦿──⦿  SIMBA  ⦿──⦿  |       INFO | 2026-05-25 11:50:59 | ==== Outputs ====
+⦿──⦿  SIMBA  ⦿──⦿  |       INFO | 2026-05-25 11:50:59 | In Progress: Saving Sea Ice Mass Budget Analysis outputs to netCDF file...
+⦿──⦿  SIMBA  ⦿──⦿  |       INFO | 2026-05-25 11:50:59 | Completed: Saved Sea Ice Mass Budget Analysis outputs to file -> /g100_work/optim_IAC/research/noc/otooth/OptimESM/WP5/SeaIceMassBudgetMIP/contributions/CNRM-ESM2-1/outputs//CNRM-ESM2-1_SIMBA_NH_esm-up2p0-gwl5p0_r1i1p2f2_2087-01-2386-12.nc
+⦿──⦿  SIMBA  ⦿──⦿  |       INFO | 2026-05-25 11:50:59 | Completed: Succesfully closed all netcdf files.
+⦿──⦿  SIMBA  ⦿──⦿  |       INFO | 2026-05-25 11:50:59 | ✔ SIMBA Completed ✔
+⦿──⦿  SIMBA  ⦿──⦿  |       INFO | 2026-05-25 11:51:22 | 
+   ⦿──⦿──⦿──⦿──⦿──⦿──⦿──⦿──⦿──⦿──⦿──⦿
+       Sea Ice Mass Budget Analysis      
+   ⦿──⦿──⦿──⦿──⦿──⦿──⦿──⦿──⦿──⦿──⦿──⦿
+
+        version: 0.1.0
+
+
+⦿──⦿  SIMBA  ⦿──⦿  |       INFO | 2026-05-25 11:51:22 | ==== Inputs ====
+⦿──⦿  SIMBA  ⦿──⦿  |       INFO | 2026-05-25 11:51:22 | Completed: Read & validated config file -> ./configs/CNRM-ESM2-1_esm-up2p0-gwl_config.toml
+⦿──⦿  SIMBA  ⦿──⦿  |       INFO | 2026-05-25 11:51:22 | In Progress: Reading sea ice mass budget variables...
+⦿──⦿  SIMBA  ⦿──⦿  |       INFO | 2026-05-25 11:51:22 | --> Completed: Opened 'mask' variable.
+⦿──⦿  SIMBA  ⦿──⦿  |       INFO | 2026-05-25 11:51:22 | In Progress: Creating sea ice mass budget dataset from variables.
+⦿──⦿  SIMBA  ⦿──⦿  |       INFO | 2026-05-25 11:51:22 | --> Completed: Opened 'areacello' variable.
+⦿──⦿  SIMBA  ⦿──⦿  |       INFO | 2026-05-25 11:51:22 | --> Completed: Opened 'siconc' variable.
+⦿──⦿  SIMBA  ⦿──⦿  |       INFO | 2026-05-25 11:51:22 | --> Completed: Opened 'sivol' variable.
+⦿──⦿  SIMBA  ⦿──⦿  |       INFO | 2026-05-25 11:51:22 | --> Completed: Opened 'simass' variable.
+⦿──⦿  SIMBA  ⦿──⦿  |       INFO | 2026-05-25 11:51:22 | --> Completed: Opened 'sidmassth' variable.
+⦿──⦿  SIMBA  ⦿──⦿  |       INFO | 2026-05-25 11:51:22 | --> Completed: Opened 'sidmassdyn' variable.
+⦿──⦿  SIMBA  ⦿──⦿  |       INFO | 2026-05-25 11:51:26 | --> Completed: Opened 'sidmassevapsubl' variable.
+⦿──⦿  SIMBA  ⦿──⦿  |       INFO | 2026-05-25 11:51:29 | --> Completed: Opened 'sidmassmelttop' variable.
+⦿──⦿  SIMBA  ⦿──⦿  |       INFO | 2026-05-25 11:51:33 | --> Completed: Opened 'sidmassmeltbot' variable.
+⦿──⦿  SIMBA  ⦿──⦿  |       INFO | 2026-05-25 11:51:33 | --> Completed: Created sea ice mass budget dataset from variables.
+⦿──⦿  SIMBA  ⦿──⦿  |       INFO | 2026-05-25 11:51:33 | ==== Sea Ice Mass Budget Calculation ====
+⦿──⦿  SIMBA  ⦿──⦿  |       INFO | 2026-05-25 11:51:33 | In Progress: Calculating Regional Sea Ice Mass Budget...
+⦿──⦿  SIMBA  ⦿──⦿  |       INFO | 2026-05-25 11:52:20 | Completed: Calculated Regional Sea Ice Mass Budget.
+⦿──⦿  SIMBA  ⦿──⦿  |       INFO | 2026-05-25 11:52:20 | ==== Outputs ====
+⦿──⦿  SIMBA  ⦿──⦿  |       INFO | 2026-05-25 11:52:20 | In Progress: Saving Sea Ice Mass Budget Analysis outputs to netCDF file...
+⦿──⦿  SIMBA  ⦿──⦿  |       INFO | 2026-05-25 11:52:20 | Completed: Saved Sea Ice Mass Budget Analysis outputs to file -> /g100_work/optim_IAC/research/noc/otooth/OptimESM/WP5/SeaIceMassBudgetMIP/contributions/CNRM-ESM2-1/outputs//CNRM-ESM2-1_SIMBA_SH_esm-up2p0-gwl5p0_r1i1p2f2_2087-01-2386-12.nc
+⦿──⦿  SIMBA  ⦿──⦿  |       INFO | 2026-05-25 11:52:20 | Completed: Succesfully closed all netcdf files.
+⦿──⦿  SIMBA  ⦿──⦿  |       INFO | 2026-05-25 11:52:20 | ✔ SIMBA Completed ✔
