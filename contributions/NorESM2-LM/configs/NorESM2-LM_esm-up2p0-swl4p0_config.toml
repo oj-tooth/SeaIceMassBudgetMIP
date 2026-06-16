@@ -9,11 +9,11 @@ dimensions = { time = "time", i = "i", j = "j"}
 # Data directory for all input datasets to be optionally substituted in filepaths below:
 # (i.e., any instance of "{data_dir}" in filepaths below will be replaced with the value specified here).
 #data_dir = "path/to/myESM/r1i1p1f1/SImon"
-data_dir = "/nird/datalake/NS2980K/projects/TipESM/cmor/esm-up2p0-swl4p0/v20251010"
+data_dir = "/nird/datalake/NS2980K/projects/TipESM/cmor/esm-up2p0-swl4p0/v*"
 
     [inputs.mask]
     # === Define variable name & filepath of regional mask to perform sea ice mass budget === #
-    name = "mask_NH"
+    name = "mask_SH"
     filepath = "/nird/datalake/NS2980K/projects/TipESM/cice_Ofx/hemisphere_masks_CICE_Ofx_NorESM2-LM.nc"
 
     [inputs.areacello]
@@ -74,5 +74,5 @@ data_dir = "/nird/datalake/NS2980K/projects/TipESM/cmor/esm-up2p0-swl4p0/v202510
 [outputs]
 # Define Sea Ice Mass Budget Analysis netCDF output file:
 output_dir = "/nird/datalake/NS2980K/projects/TipESM/SIMBA_out"
-output_name = "NorESM2-LM_SIMBA_NH_esm-up2p0-swl4p0_r1i1p1f1"
+output_name = "NorESM2-LM_SIMBA_SH_esm-up2p0-swl4p0_r1i1p1f1"
 date_format = "M"
